@@ -1,8 +1,9 @@
 @font-face {
-  font-family: "Work Sans";
+  font-family: "Space Grotesk";
   font-style: normal;
   font-weight: 400 900;
-  src: url("./fonts/Work_Sans.ttf") format("truetype");
+  src: url("./fonts/Space_Grotesk.woff2") format("woff2"),
+    url("./fonts/Space_Grotesk.ttf") format("truetype");
 }
 
 html {
@@ -56,7 +57,7 @@ html {
   --fw-bold: calc(var(--fw-semi, 600) + 100);
 
   /* Font Stacks */
-  --fs-work-sans: "Work Sans", serif;
+  --fs-space-grotesk: "Space Grotesk", sans-serif;
 
   /* Colors */
 }
@@ -67,8 +68,6 @@ html {
 }
 
 body {
-  font-family: var(--fs-work-sans);
-  font-size: var(--base-fs);
-  font-weight: var(--fw-regular);
-  line-height: var(--base-lh);
+  background-color: hwb(20 80% 15%);
+  font-family: var(--fs-space-grotesk);
 }
