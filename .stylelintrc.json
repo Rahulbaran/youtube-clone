@@ -31,8 +31,7 @@
       "vmax"
     ],
     "max-nesting-depth": 2,
-    "order/order": ["custom-properties", "declarations"],
-    "order/properties-order": ["width", "inline-size", "height", "block-size"]
+    "order/order": ["custom-properties", "declarations"]
   },
   "ignoreFiles": ["dist/**/**/*.css", "node_modules/**/**/*.css"]
 }
