@@ -1,3 +1,5 @@
+/* stylelint-disable order/properties-alphabetical-order */
+/* stylelint-disable declaration-no-important */
 @font-face {
   font-family: "Space Grotesk";
   font-style: normal;
@@ -70,4 +72,81 @@ html {
 body {
   background-color: hwb(20 80% 15%);
   font-family: var(--fs-space-grotesk);
+}
+
+::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: hwb(0 44% 55%);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.react-player {
+  height: 77vh !important;
+  width: 100% !important;
+}
+
+.search-bar {
+  border: none;
+  outline: none;
+  width: 350px;
+}
+
+.category-btn {
+  font-weight: semi !important;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: calc(var(--base-gap) * 2);
+  cursor: pointer;
+  background: transparent;
+  outline: none;
+  border: none;
+  padding: 7px 15px;
+  margin: 10px 0;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.category-btn:hover {
+  background-color: hwb(4 1% 1%) !important;
+  color: hwb(0 100% 0%) !important;
+}
+
+.category-btn:hover span {
+  color: hwb(0 100% 0%) !important;
+}
+
+@media screen and (max-width: 900px) {
+  .category-btn {
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .copyright {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .scroll-horizontal {
+    overflow: auto !important;
+  }
+
+  .react-player {
+    height: 45vh !important;
+  }
+
+  .search-bar {
+    width: 200px;
+  }
 }
